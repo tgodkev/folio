@@ -9,6 +9,7 @@ function Card(props) {
             <img src={props.photo} alt="" />
             <p> {props.content} </p>
              <a href={props.source}> Source<GitHubIcon /></a>
+             
         </div>
 
   )

@@ -1,34 +1,94 @@
 body{
     padding: 0px;
     margin: 0px;
+    background-color: black;
 }
 
 .header{
     text-align: center;
-    margin-bottom: 30%;
+    margin-bottom: 20%;
+  
+}
+
+.header h1{
+    font-size: 5rem;
+    color: #DBEDF3;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 3px 0 #DA0463;
+}
+
+.header h2{
+    font-size: 3rem;
+    color: #DBEDF3;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 3px 0 #DA0463;
+}
+.header p{
+    margin-top: 5%;
+    width: 40%;
+   margin-left: 30%;
+   color: #DBEDF3;
+   font-family: 'Kanit', sans-serif;
+   font-size: 2rem;
 }
 
 .container{
    display: grid;
-   grid-template-columns: 60% 60%;
-   grid-template-rows: 30% 30%;
+   margin-left: 15%;
+   grid-template-columns: 30% 30% ;
+   
+}
+
+.skills{
+    margin-left: 25%;
+    margin-bottom: 10%;
+}
+
+.skills h1{
+    font-size: 4rem;
+    color: #DBEDF3;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 3px 0 #DA0463;
+    margin-left: 17%;
 }
 
 .card  {
-   margin-bottom: 5%;
+    width: 30%;
+   margin-bottom: 3%;
+   margin-left: 20%;
+   border: 1px solid;
+   
+   margin-left: 33%;
+   
 }
-
-
 .card h1 {
-    text-align: left;
+    text-align: center;
+    color: #DBEDF3;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 3px 0 #DA0463;
 
 }
 .card p{
-    width: 50%;
+    
     text-align: center;
+    color: #DBEDF3;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.5rem;
+    
 }
 
 .card img{
-    height: 60%;
-    width: 60%;
+    height: 80%;
+    width: 80%;
+    margin-left: 10%;
+
+}
+
+.projects{
+    font-size: 3rem;
+    color: #DBEDF3;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 3px 0 #DA0463;
+    margin-left: 37%;
+    margin-bottom: 10%;
 }

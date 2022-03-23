@@ -1,6 +1,7 @@
 import Header from './Header';
 import Card from './Card';
 import projects from './Projects';
+import Skills from './Skills';
 
 
 function App() {
@@ -26,8 +27,11 @@ function createCard(projects, n){
   return (
     <div>
       <Header />
-
-      <div className='container'>{projects.map(createCard)}</div>
+      <Skills />
+      <div className='projects'>
+      <h1>Projects</h1>
+      </div>
+      {projects.map(createCard)}
       
     </div>
   );

@@ -3,7 +3,7 @@ const projects = [
     {
         id: "1",
         name: "Message App",
-        description: "A social media style messaging board, made useing react, typescript and firebase for hosting, authentication and the database.",
+        description: "A messaging board, made useing react, typescript and firebase for hosting, authentication and the database.",
         img:"https://media.giphy.com/media/digHy0IwhKwCoZ391F/giphy.gif ",
         link:"https://social-b140c.firebaseapp.com/",
         source: "https://github.com/tgodkev/social"
