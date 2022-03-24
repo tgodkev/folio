@@ -10,7 +10,7 @@ import npmimg from '../images/npmimg.png'
 function Skills() {
   return (
     <div className='skills'>
-        <h1>Technologies.</h1>
+        <h1>Technologies</h1>
         <div className='container'>
         <img src={html} alt="" />
         <img src={css} alt="" />

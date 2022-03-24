@@ -2,7 +2,7 @@ const projects = [
 
     {
         id: "1",
-        name: "Message App",
+        name: "Message Board.",
         description: "A messaging board, made useing react, typescript and firebase for hosting, authentication and the database.",
         img:"https://media.giphy.com/media/digHy0IwhKwCoZ391F/giphy.gif ",
         link:"https://social-b140c.firebaseapp.com/",
@@ -18,24 +18,24 @@ const projects = [
     },
     {
         id: "3",
-        name: "Store App",
-        description: "Shopping app made with React, Css and html.",
+        name: "Store App.",
+        description: "Shopping app made with Javascript, Css and html.",
         img: "https://media.giphy.com/media/ZxS0ONK1lqDG856uiB/giphy.gif",
         link:"https://stoic-panini-62a2c1.netlify.app/",
         source:"https://github.com/tgodkev/shop-app"
     },
     {
         id: "4",
-        name: "Recipe App",
-        description: "Recipe page made with React, MUI, CSS and html.",
+        name: "Recipe App.",
+        description: "Recipe page made with Javascript, CSS and html.",
         img: "https://media.giphy.com/media/8EmNc75A9gdjRP5yQj/giphy.gif",
         link:"https://agitated-saha-e1f5ef.netlify.app/",
         source:"https://github.com/tgodkev/kevs-cooking"
     },
     {
         id: "5",
-        name: "Small Website For local buisness",
-        description: "Website built with react js and css.",
+        name: "Small Website.",
+        description: "Website built with Javascript and css for a local buisness.",
         img: "https://media.giphy.com/media/SB30S8Dk71xi93oOQ0/giphy.gif",
         link:"https://trusting-hugle-759944.netlify.app/",
         source:"https://github.com/tgodkev/cicis-app"
