@@ -16,14 +16,36 @@ body{
 .header h1{
     font-size: 7rem;
     color: #DBEDF3;
-    font-family: 'Finger Paint', cursive;
-    text-shadow: 3px 0 #DA0463;
+    font-family: 'Permanent Marker', cursive;
+    text-shadow: 9px 0 #DA0463;
+    animation: slidein 2s;
+}
+
+@keyframes slidein {
+  from{
+      margin-bottom: 100%;
+      width: 100%;
+  }
+  75%{
+      color: #DA0463;
+      font-size: 200px;
+      width: 100%;
+  }
+
+  to{
+      
+      width: 100%;
+  }
+    
+}
+.header h1:hover::before{
+   content: 'Hello';
 }
 
 .header h2{
     font-size: 3rem;
     color: #DBEDF3;
-    font-family: 'Finger Paint', cursive;
+    font-family: 'Permanent Marker', cursive;
     text-shadow: 3px 0 #DA0463;
 }
 .header p{
@@ -50,28 +72,36 @@ body{
 .skills h1{
     font-size: 5rem;
     color: #DBEDF3;
-    font-family: 'Finger Paint', cursive;
+    font-family: 'Permanent Marker', cursive;
     text-shadow: 3px 0 #DA0463;
-    margin-left: 11%;
+    margin-left: 14%;
 }
 
 .card  {
     width: 40%;
-   margin-bottom: 3%;
+   margin-bottom: 10%;
    margin-left: 30%;
    
 }
 
-.buttons{
-    margin-left: 20%;
-    
-    padding: 5%;
+.card:hover{
+    transform: scale(150%);
 }
+
+
+
+.buttons{
+    margin-left: 40%;
+    margin-bottom: 2%;
+    
+}
+
+
 .card h1 {
     text-align: center;
     font-size: 4rem;
     color: #DBEDF3;
-    font-family: 'Finger Paint', cursive;
+    font-family: 'Permanent Marker', cursive;
     text-shadow: 3px 0 #DA0463;
 
 }
@@ -91,17 +121,19 @@ body{
 
 }
 
+
+
 .projects{
     font-size: 3rem;
     color: #DBEDF3;
-    font-family: 'Finger Paint', cursive;
+    font-family: 'Permanent Marker', cursive;
     text-shadow: 3px 0 #DA0463;
-    margin-left: 30%;
-    margin-bottom: 10%;
+    margin-left: 33%;
+    margin-bottom: 15%;
 }
 
 
-@media  screen and (max-width: 1170px) {
+@media  screen and (max-width: 1180px) {
     body{
         padding: 0px;
         margin: 0px;
@@ -113,27 +145,36 @@ body{
     
     .header{
         text-align: center;
-        margin-bottom: 20%;
-      
+        margin-bottom: 40%;
+        
     }
+
+
+    
     
     .header h1{
         font-size: 4rem;
         color: #DBEDF3;
-        font-family: 'Finger Paint', cursive;
-        text-shadow: 3px 0 #DA0463;
+        font-family: 'Permanent Marker', cursive;
+        text-shadow: 8px 0 #DA0463;
+      
     }
+
+
+    
+   
+
     
     .header h2{
         font-size: 2rem;
         color: #DBEDF3;
-        font-family: 'Finger Paint', cursive;
+        font-family: 'Permanent Marker', cursive;
         text-shadow: 3px 0 #DA0463;
     }
     .header p{
         margin-top: 5%;
-        width: 40%;
-       margin-left: 30%;
+        width: 70%;
+       margin-left: 15%;
        color: #DBEDF3;
        font-family: 'Kanit', sans-serif;
        font-size: 1.3rem;
@@ -148,34 +189,40 @@ body{
     
     .skills{
         margin-left: 0px;
-        margin-bottom: 10%;
+        margin-bottom: 40%;
     }
     
     .skills h1{
         font-size: 3rem;
         color: #DBEDF3;
-        font-family: 'Finger Paint', cursive;
+        font-family: 'Permanent Marker', cursive;
         text-shadow: 3px 0 #DA0463;
         margin-left: 10%;
     }
     
     .card  {
         width: 80%;
-       margin-bottom: 10%;
+       margin-bottom: 30%;
        margin-left: 10%;
 
        
     }
+
+   
+
+    
+   
     
     .buttons{
-        margin-left: 20%;
+        margin-left: 30%;
         
     }
+    
     .card h1 {
         text-align: center;
         font-size: 2.4rem;
         color: #DBEDF3;
-        font-family: 'Finger Paint', cursive;
+        font-family: 'Permanent Marker', cursive;
         text-shadow: 3px 0 #DA0463;
     
     }
@@ -195,13 +242,14 @@ body{
     
     }
     
+    
     .projects{
-        font-size: 1.7rem;
+        font-size: 1.3rem;
         color: #DBEDF3;
-        font-family: 'Finger Paint', cursive;
-        text-shadow: 3px 0 #DA0463;
-        margin-left: 10%;
-        margin-bottom: 10%;
+        font-family: 'Permanent Marker', cursive;
+        text-shadow: 5px 0 #DA0463;
+        margin-left: 15%;
+        margin-bottom: 20%;
     }
     
 }

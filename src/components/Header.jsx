@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function Header() {
   return (
-    <div className='header'>
+    <div class='header'>
 
-        <div>
+        <div class='name'>
             <h1> I'm Kevin,</h1>
             <h2>A web developer.</h2>
         </div>

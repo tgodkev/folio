@@ -8,19 +8,26 @@ function Card(props) {
   
         <div className='card'>
             <h1> {props.title} </h1>
-            <img src={props.photo} alt="" />
+            <img classname='gif'src={props.photo} alt="" />
             <p> {props.content} </p>
             <div className='buttons'>
-            <Button onClick={()=>{
+            <Button 
+            
+            onClick={()=>{
                 window.open(props.link)
             }}
             variant='contained'
             color='primary'
+            
             >
                 Live Demo.  <CloudIcon/>
-            </Button> {' '}
-          
-             <Button color='primary' onClick={()=>{
+            </Button> 
+            </div>
+            
+                <div className='buttons'>
+             <Button color='primary'
+             
+              onClick={()=>{
                  window.open(props.source)
              }}  variant='contained'>Source Code.<GitHubIcon /></Button>
              
