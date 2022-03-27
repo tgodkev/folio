@@ -18,24 +18,31 @@ body{
     color: #DBEDF3;
     font-family: 'Permanent Marker', cursive;
     text-shadow: 9px 0 #DA0463;
-    animation: slidein 2s;
+    animation: slidein 4s;
 }
 
 @keyframes slidein {
   from{
+      font-size: 5px;
       margin-bottom: 100%;
-      width: 100%;
-  }
-  75%{
-      color: #DA0463;
-      font-size: 200px;
-      width: 100%;
   }
 
-  to{
-      
-      width: 100%;
+  5%{
+      font-size: 20px;
+      color: gold;
+      text-shadow: 9px 0 black;
   }
+ 
+  30%{
+      
+      color: gold;
+      text-shadow: 9px 0 black;
+      font-size: 200px;
+      width: 100%;
+      transform: rotate(360deg);
+  }
+
+  
     
 }
 .header h1:hover::before{
@@ -133,7 +140,7 @@ body{
 }
 
 
-@media  screen and (max-width: 1180px) {
+@media  screen and (max-width: 1280px) {
     body{
         padding: 0px;
         margin: 0px;
@@ -153,13 +160,52 @@ body{
     
     
     .header h1{
-        font-size: 4rem;
+        font-size: 7rem;
         color: #DBEDF3;
         font-family: 'Permanent Marker', cursive;
-        text-shadow: 8px 0 #DA0463;
-      
+        text-shadow: 9px 0 #DA0463;
+        animation: slidein 20s;
     }
+    
+    @keyframes slidein {
+      from{
+          color: #DBEDF3;
+      }
+      10%{
+          color:#444554;
+      }
+      20%{
+          color: yellow;
+      }
+      30%{
+          color:aqua
+      }
+      40%{
+          color: gold;
+      }
+     
+      50%{
+          
+          color: #DA0463;
 
+      }
+      60%{
+          color: green;
+      }
+
+      70%{
+         color: blue;
+      }
+      80%{
+          color: teal;
+      }
+      
+      90%{
+          color: black;
+      }
+      
+        
+    }
 
     
    
