@@ -12,14 +12,38 @@ function Skills() {
     <div className='skills'>
         <h1>Technologies</h1>
         <div className='container'>
-        <img src={html} alt="" />
-        <img src={css} alt="" />
-        <img src={javascript} alt="" />
-        <img src={react2} alt="" />
-        <img src={node} alt="" />
-        <img src={mongo} alt="" />
-        <img src={firebase} alt="" />
-        <img src={npmimg} alt="" />
+        <div class='skillz'>
+        <span class="tooltip" data-tooltip="HTML5"><img src={html} alt="" /></span>
+        </div>
+
+        <div class='skillz'>
+        <span class="tooltip" data-tooltip="CSS3"><img src={css} alt="" /></span>
+        </div>    
+
+        <div class='skillz'>
+        <span class="tooltip" data-tooltip="Javascript"><img src={javascript} alt="" /></span>
+        </div>
+        
+        <div class='skillz'>
+        <span class="tooltip" data-tooltip="React.js"><img src={react2} alt="" /></span>
+        </div>
+
+        <div class='skillz'>
+        <span class="tooltip" data-tooltip="Node.js"><img src={node} alt="" /></span>
+        </div>
+      
+        <div class='skillz'>
+        <span class="tooltip" data-tooltip="MongoDb"><img src={mongo} alt="" /></span>
+        </div>
+      
+        <div class='skillz'>
+        <span class="tooltip" data-tooltip="Firebase"> <img src={firebase} alt="" /></span>
+        </div>
+        
+        <div class='skillz'>
+        <span class="tooltip" data-tooltip="Node Packet Manager."><img src={npmimg} alt="" /></span>
+        </div>
+        
        
         </div>
     </div>
@@ -28,3 +52,5 @@ function Skills() {
 
 
 export default Skills
+
+

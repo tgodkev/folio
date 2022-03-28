@@ -13,47 +13,101 @@ body{
   
 }
 
-.header h1{
+
+
+.name{
+    display: inline-block;
     font-size: 7rem;
     color: #DBEDF3;
     font-family: 'Permanent Marker', cursive;
-    text-shadow: 9px 0 #DA0463;
-    animation: slidein 4s;
+    text-shadow: 2px 0 black;
 }
 
-@keyframes slidein {
-  from{
-      font-size: 5px;
-      margin-bottom: 100%;
-  }
+.letter{
+    display: inline-block;
+    font-size: 7rem;
+    color: #DBEDF3;
+    font-family: 'Permanent Marker', cursive;
+    text-shadow: 2px 0 black;
+    margin:0px;
 
-  5%{
-      font-size: 20px;
-      color: gold;
-      text-shadow: 9px 0 black;
-  }
- 
-  30%{
-      
-      color: gold;
-      text-shadow: 9px 0 black;
-      font-size: 200px;
-      width: 100%;
-      transform: rotate(360deg);
-  }
-
-  
     
 }
-.header h1:hover::before{
-   content: 'Hello';
+
+.letter:hover{
+    animation-name: rubberBand;
+    -webkit-animation: rubberBand;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    color: gold;
 }
+
+@-webkit-keyframes rubberBand{
+    from {
+        transform: scale3d(1, 1, 1);
+      }
+    
+      30% {
+        transform: scale3d(1.25, 0.75, 1);
+      }
+    
+      40% {
+        transform: scale3d(0.75, 1.25, 1);
+      }
+    
+      50% {
+        transform: scale3d(1.15, 0.85, 1);
+      }
+    
+      65% {
+        transform: scale3d(.95, 1.05, 1);
+      }
+    
+      75% {
+        transform: scale3d(1.05, .95, 1);
+      }
+    
+      to {
+        transform: scale3d(1, 1, 1);
+      }
+}
+
+@keyframes rubberBand {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+  
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+  
+    65% {
+      transform: scale3d(.95, 1.05, 1);
+    }
+  
+    75% {
+      transform: scale3d(1.05, .95, 1);
+    }
+  
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+  }
 
 .header h2{
     font-size: 3rem;
     color: #DBEDF3;
     font-family: 'Permanent Marker', cursive;
-    text-shadow: 3px 0 #DA0463;
+    text-shadow: 3px 0 black;
 }
 .header p{
     margin-top: 5%;
@@ -75,12 +129,78 @@ body{
     margin-left: 25%;
     margin-bottom: 10%;
 }
+.tooltip {
+    position: relative;
+    padding: 5px 12px;
+    margin: 5px;
+    font-size: 15px;
+    border-radius: 100%;
+    color: #FFF;
+  }
+  
+  .tooltip:before,
+  .tooltip:after {
+    position: absolute;
+    content: '';
+    opacity: 0;
+    transition: all 0.4s ease;
+  }
+  
+  .tooltip:before {
+    border-width: 10px 8px 0 8px;
+    border-style: solid;
+    border-color: grey transparent transparent transparent;
+    top: -130px;
+    left: 75px;
+     transform: translateY(20px);
+  }
+  
+  .tooltip:after {
+    content: attr(data-tooltip);
+    background: grey;
+    width: 160px;
+    height: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    top: -190px;
+    left: -10px;
+    padding: 10px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transform: translateY(20px);
+  }
+  
+  .tooltip:hover::before,
+  .tooltip:hover::after {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+  
+  @keyframes shake {
+    0% { 
+      transform: rotate(2deg);
+    }
+    50% {
+     transform: rotate(-3deg);
+    }
+    70% {
+      transform: rotate(3deg);
+    }
+  
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .skillz:hover {
+    animation: shake 500ms ease-in-out forwards;
+  }
 
 .skills h1{
     font-size: 5rem;
     color: #DBEDF3;
     font-family: 'Permanent Marker', cursive;
-    text-shadow: 3px 0 #DA0463;
+    text-shadow: 3px 0 black;
     margin-left: 14%;
 }
 
@@ -109,7 +229,7 @@ body{
     font-size: 4rem;
     color: #DBEDF3;
     font-family: 'Permanent Marker', cursive;
-    text-shadow: 3px 0 #DA0463;
+    text-shadow: 3px 0 black;
 
 }
 .card p{
@@ -134,7 +254,7 @@ body{
     font-size: 3rem;
     color: #DBEDF3;
     font-family: 'Permanent Marker', cursive;
-    text-shadow: 3px 0 #DA0463;
+    text-shadow: 3px 0 black;
     margin-left: 33%;
     margin-bottom: 15%;
 }
@@ -163,50 +283,97 @@ body{
         font-size: 7rem;
         color: #DBEDF3;
         font-family: 'Permanent Marker', cursive;
-        text-shadow: 9px 0 #DA0463;
-        animation: slidein 20s;
+        text-shadow: 9px 0 black;
+        animation: slidein 3s;
     }
     
-    @keyframes slidein {
-      from{
-          color: #DBEDF3;
-      }
-      10%{
-          color:#444554;
-      }
-      20%{
-          color: yellow;
-      }
-      30%{
-          color:aqua
-      }
-      40%{
-          color: gold;
-      }
-     
-      50%{
-          
-          color: #DA0463;
-
-      }
-      60%{
-          color: green;
-      }
-
-      70%{
-         color: blue;
-      }
-      80%{
-          color: teal;
-      }
-      
-      90%{
-          color: black;
-      }
-      
+  
+    
+    
+    .letter{
+        display: inline-block;
+        font-size: 2.8rem;
+        color: #DBEDF3;
+        font-family: 'Permanent Marker', cursive;
+        text-shadow: 2px 0 black;
+       
+        animation-name: rubberBand;
+        -webkit-animation: rubberBand;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-iteration-count: 2s;
         
     }
-
+    
+    .letter:hover{
+        animation-name: rubberBand;
+        -webkit-animation: rubberBand;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-iteration-count: 1;
+        color: gold;
+    }
+    
+    @-webkit-keyframes rubberBand{
+        from {
+            transform: scale3d(1, 1, 1);
+          }
+        
+          30% {
+            transform: scale3d(1.25, 0.75, 1);
+          }
+        
+          40% {
+            transform: scale3d(0.75, 1.25, 1);
+          }
+        
+          50% {
+            transform: scale3d(1.15, 0.85, 1);
+          }
+        
+          65% {
+            transform: scale3d(.95, 1.05, 1);
+          }
+        
+          75% {
+            transform: scale3d(1.05, .95, 1);
+          }
+        
+          to {
+            transform: scale3d(1, 1, 1);
+          }
+    }
+    
+    @keyframes rubberBand {
+        from {
+          transform: scale3d(1, 1, 1);
+        }
+      
+        30% {
+          transform: scale3d(1.25, 0.75, 1);
+        }
+      
+        40% {
+          transform: scale3d(0.75, 1.25, 1);
+        }
+      
+        50% {
+          transform: scale3d(1.15, 0.85, 1);
+        }
+      
+        65% {
+          transform: scale3d(.95, 1.05, 1);
+        }
+      
+        75% {
+          transform: scale3d(1.05, .95, 1);
+        }
+      
+        to {
+          transform: scale3d(1, 1, 1);
+        }
+      }
+    
     
    
 
@@ -215,7 +382,7 @@ body{
         font-size: 2rem;
         color: #DBEDF3;
         font-family: 'Permanent Marker', cursive;
-        text-shadow: 3px 0 #DA0463;
+        text-shadow: 3px 0 black;
     }
     .header p{
         margin-top: 5%;
@@ -242,7 +409,7 @@ body{
         font-size: 3rem;
         color: #DBEDF3;
         font-family: 'Permanent Marker', cursive;
-        text-shadow: 3px 0 #DA0463;
+        text-shadow: 3px 0 black;
         margin-left: 10%;
     }
     
@@ -269,7 +436,7 @@ body{
         font-size: 2.4rem;
         color: #DBEDF3;
         font-family: 'Permanent Marker', cursive;
-        text-shadow: 3px 0 #DA0463;
+        text-shadow: 3px 0 black;
     
     }
     .card p{
@@ -293,7 +460,7 @@ body{
         font-size: 1.3rem;
         color: #DBEDF3;
         font-family: 'Permanent Marker', cursive;
-        text-shadow: 5px 0 #DA0463;
+        text-shadow: 5px 0 black;
         margin-left: 15%;
         margin-bottom: 20%;
     }
