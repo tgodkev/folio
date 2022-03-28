@@ -136,6 +136,7 @@ body{
     font-size: 15px;
     border-radius: 100%;
     color: #FFF;
+    font-family: 'Kanit', sans-serif;
   }
   
   .tooltip:before,
@@ -160,13 +161,14 @@ body{
     background: grey;
     width: 160px;
     height: 40px;
-    font-size: 13px;
+    font-size: 30px;
     font-weight: 300;
     top: -190px;
     left: -10px;
     padding: 10px;
     border-radius: 5px;
     letter-spacing: 1px;
+    text-align: center;
     transform: translateY(20px);
   }
   

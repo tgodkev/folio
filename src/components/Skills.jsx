@@ -41,7 +41,7 @@ function Skills() {
         </div>
         
         <div class='skillz'>
-        <span class="tooltip" data-tooltip="Node Packet Manager."><img src={npmimg} alt="" /></span>
+        <span class="tooltip" data-tooltip="NPM."><img src={npmimg} alt="" /></span>
         </div>
         
        
