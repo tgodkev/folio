@@ -7,7 +7,7 @@ export default function Header() {
         <div class='name'>
         <span class='letter'>I</span>
         <span class='letter'>m</span>
-        <span>  </span>
+        <span class='space'></span>
         <span class='letter'>K</span>
         <span class='letter'>e</span>
         <span class='letter'>v</span>
@@ -16,11 +16,11 @@ export default function Header() {
         <span class='letter'>,</span>
         <br />
         <span class='letter'>A</span>
-        <span> </span>
+        <span class='space'></span>
         <span class='letter'>W</span>
         <span class='letter'>e</span>
         <span class='letter'>b</span>
-        <span> </span>
+        <span class='space'></span>
         <span class='letter'>D</span>
         <span class='letter'>e</span>
         <span class='letter'>v</span>
@@ -37,7 +37,7 @@ export default function Header() {
         <div>
             <p>
                Im a 28 year old full stack developer from Ohio. Scroll down to see technologies I am proficient in and some projects,
-               I currently work remotely with a selected freelance client base while also being open to new opportunities.
+               I currently work full time remotely as a front end developer for a start up in Atlanta, I also work with a selected freelance client base .
             </p>
         </div>
     </div>

@@ -1,11 +1,18 @@
 body{
     padding: 0px;
     margin: 0px;
-    background-color: #444554;
+    /*background-color: #0E185F;*/
+    /*background-color: #0A1931;*/
+    background-color: black;
+   
     /*background-image: url("https://www.transparenttextures.com/patterns/crissxcross.png");*/
-    background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
-      /*background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");*/
+    /*background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");*/
+     /* background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");*/
+     /*background-image: url("https://www.transparenttextures.com/patterns/type.png");*/
+     background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
 }
+     
+
 
 .header{
     text-align: center;
@@ -15,12 +22,10 @@ body{
 
 
 
-.name{
-    display: inline-block;
-    font-size: 7rem;
-    color: #DBEDF3;
-    font-family: 'Permanent Marker', cursive;
-    text-shadow: 2px 0 black;
+
+.space {
+    margin: 16px;
+    padding: 0px;
 }
 
 .letter{
@@ -40,9 +45,10 @@ body{
     animation-duration: 1s;
     animation-fill-mode: both;
     animation-iteration-count: 1;
-    color: gold;
+    color: #FAFF00;
 }
 
+/* animation for header rubber band */
 @-webkit-keyframes rubberBand{
     from {
         transform: scale3d(1, 1, 1);
@@ -129,6 +135,8 @@ body{
     margin-left: 25%;
     margin-bottom: 10%;
 }
+
+/* animation for popup tooltip */
 .tooltip {
     position: relative;
     padding: 5px 12px;
@@ -213,17 +221,79 @@ body{
    
 }
 
-.card:hover{
-    transform: scale(150%);
+/* tooltip for card */
+.popup {
+  position: relative;
+  padding: 5px 12px;
+  margin: 5px;
+  font-size: 15px;
+  border-radius: 50%;
+  color: #FFF;
+  font-family: 'Kanit', sans-serif;
+}
+
+.popup:before,
+.popup:after {
+  position: absolute;
+  content: '';
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.popup:after {
+  content: attr(data-tooltip);
+  
+  width: 660px;
+  height: 360px;
+  font-size: 30px;
+  font-weight: 300;
+  top: 200px;
+  left: 12px;
+  padding: 10px;
+  border-radius: 2%;
+  letter-spacing: 1px;
+  text-align: center;
+  transform: translateY(20px);
+  
+}
+
+.popup:hover::before,
+.popup:hover::after {
+  opacity: 10;
+  transform: translateY(-2px);
+}
+
+.popupbutton{
+
+  position: absolute;
+  font-size: 30px;
+ left: 300px;
+ top: 200px;
+ background-color: black;
+
+  
+  
+  
+}
+
+.popupbutton{
+  visibility: hidden;
+}
+
+.popup:hover .popupbutton{
+  visibility: visible;
+  height: 400px;
+  width: 700px;
+  top: 200px;
+  left: 50px;
+  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+}
+
+.card:hover {
+ 
 }
 
 
-
-.buttons{
-    margin-left: 40%;
-    margin-bottom: 2%;
-    
-}
 
 
 .card h1 {
@@ -272,25 +342,14 @@ body{
           /*background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");*/
     }
     
-    .header{
-        text-align: center;
-        margin-bottom: 40%;
-        
-    }
-
-
     
-    
-    .header h1{
-        font-size: 7rem;
-        color: #DBEDF3;
-        font-family: 'Permanent Marker', cursive;
-        text-shadow: 9px 0 black;
-        animation: slidein 3s;
-    }
+
     
   
-    
+    .space {
+        margin: 16px;
+        padding: 0px;
+    }
     
     .letter{
         display: inline-block;
@@ -299,11 +358,7 @@ body{
         font-family: 'Permanent Marker', cursive;
         text-shadow: 2px 0 black;
        
-        animation-name: rubberBand;
-        -webkit-animation: rubberBand;
-        animation-duration: 1s;
-        animation-fill-mode: both;
-        animation-iteration-count: 2s;
+       
         
     }
     
@@ -316,6 +371,7 @@ body{
         color: gold;
     }
     
+    /* animation for header rubber band effect */
     @-webkit-keyframes rubberBand{
         from {
             transform: scale3d(1, 1, 1);
@@ -378,14 +434,12 @@ body{
     
     
    
-
+      .header{
+          height: 10%;
+          
+      }
     
-    .header h2{
-        font-size: 2rem;
-        color: #DBEDF3;
-        font-family: 'Permanent Marker', cursive;
-        text-shadow: 3px 0 black;
-    }
+    
     .header p{
         margin-top: 5%;
         width: 70%;
