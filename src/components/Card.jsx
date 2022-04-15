@@ -8,24 +8,34 @@ function Card(props) {
   return (
   
         <div className='card'>
-                <span class="popup" data-tooltip= ''
-                url={props.source}
-        > 
+        
 
 
             <h1> {props.title} </h1>
             <img classname='gif'src={props.photo} alt="" />
-            <span class='popupbutton'>
-                   <a href={props.source}>Source</a>
-                   <br />
-                        <a href={props.link}> Live Preview </a>
-                   
-               </span>
-               
             <p> {props.content} </p>
+            <div className='buttons'>
+            <Button
+            onClick={()=> {
+              window.open(props.source)
+            }}
+            >
+              <GitHubIcon  />
+              Source
+            </Button>
+            <br />
+            <Button
+            onClick={() =>{
+              window.open(props.link)
+            }}
+            >
+              <CloudIcon />
+              Live Preview.
+            </Button>
+            </div>
                
             
-              </span>
+             
              
         </div>
 
