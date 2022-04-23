@@ -45,7 +45,7 @@ body{
     animation-duration: 1s;
     animation-fill-mode: both;
     animation-iteration-count: 1;
-    color: #FAFF00;
+    color: #8c00cd;
 }
 
 /* animation for header rubber band */
@@ -126,15 +126,20 @@ body{
 
 .container{
    display: grid;
-   margin-left: 15%;
-   grid-template-columns: 30% 30% ;
+    position: relative;
+   grid-template-columns: 20em 20em  20em 20em 20em;
+   
    
 }
 
 .skills{
-    margin-left: 25%;
-    margin-bottom: 10%;
+    margin-bottom: 20rem;
+    margin-left: 10rem;
 }
+
+
+
+
 
 /* animation for popup tooltip */
 .tooltip {
@@ -207,11 +212,11 @@ body{
   }
 
 .skills h1{
-    font-size: 5rem;
+    font-size: 6rem;
     color: #DBEDF3;
     font-family: 'Permanent Marker', cursive;
     text-shadow: 3px 0 black;
-    margin-left: 14%;
+    margin-left: 30rem;
 }
 
 .card  {
@@ -301,7 +306,7 @@ body{
         animation-duration: 1s;
         animation-fill-mode: both;
         animation-iteration-count: 1;
-        color: gold;
+        color: #8c00cd;;
     }
     
     /* animation for header rubber band effect */
