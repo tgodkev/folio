@@ -127,7 +127,8 @@ body{
 .container{
    display: grid;
     position: relative;
-   grid-template-columns: 20em 20em  20em 20em 20em;
+   grid-template-columns: 20em 20em 20em 20em 20em;
+   grid-template-rows: 20em;
    
    
 }
@@ -148,9 +149,475 @@ body{
     margin: 5px;
     font-size: 15px;
     border-radius: 100%;
-    color: #FFF;
-    font-family: 'Kanit', sans-serif;
+      padding: 0px;
+      margin: 0px;
+      /*background-color: #0E185F;*/
+      /*background-color: #0A1931;*/
+      background-color: blue;
+     
+      /*background-image: url("https://www.transparenttextures.com/patterns/crissxcross.png");*/
+      /*background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");*/
+       /* background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");*/
+       /*background-image: url("https://www.transparenttextures.com/patterns/type.png");*/
+       background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
   }
+       
+  
+  
+  .header{
+      text-align: center;
+      margin-bottom: 20%;
+    
+  }
+  
+  
+  
+  
+  .space {
+      margin: 16px;
+      padding: 0px;
+  }
+  
+  .letter{
+      display: inline-block;
+      font-size: 7rem;
+      color: #DBEDF3;
+      font-family: 'Permanent Marker', cursive;
+      text-shadow: 2px 0 black;
+      margin:0px;
+  
+      
+  }
+  
+  .letter:hover{
+      animation-name: rubberBand;
+      -webkit-animation: rubberBand;
+      animation-duration: 1s;
+      animation-fill-mode: both;
+      animation-iteration-count: 1;
+      color: #8c00cd;
+  }
+  
+  /* animation for header rubber band */
+  @-webkit-keyframes rubberBand{
+      from {
+          transform: scale3d(1, 1, 1);
+        }
+      
+        30% {
+          transform: scale3d(1.25, 0.75, 1);
+        }
+      
+        40% {
+          transform: scale3d(0.75, 1.25, 1);
+        }
+      
+        50% {
+          transform: scale3d(1.15, 0.85, 1);
+        }
+      
+        65% {
+          transform: scale3d(.95, 1.05, 1);
+        }
+      
+        75% {
+          transform: scale3d(1.05, .95, 1);
+        }
+      
+        to {
+          transform: scale3d(1, 1, 1);
+        }
+  }
+  
+  @keyframes rubberBand {
+      from {
+        transform: scale3d(1, 1, 1);
+      }
+    
+      30% {
+        transform: scale3d(1.25, 0.75, 1);
+      }
+    
+      40% {
+        transform: scale3d(0.75, 1.25, 1);
+      }
+    
+      50% {
+        transform: scale3d(1.15, 0.85, 1);
+      }
+    
+      65% {
+        transform: scale3d(.95, 1.05, 1);
+      }
+    
+      75% {
+        transform: scale3d(1.05, .95, 1);
+      }
+    
+      to {
+        transform: scale3d(1, 1, 1);
+      }
+    }
+  
+  .header h2{
+      font-size: 3rem;
+      color: #DBEDF3;
+      font-family: 'Permanent Marker', cursive;
+      text-shadow: 3px 0 black;
+  }
+  .header p{
+      margin-top: 5%;
+      width: 40%;
+     margin-left: 30%;
+     color: #DBEDF3;
+     font-family: 'Kanit', sans-serif;
+     font-size: 2rem;
+  }
+  
+  .container{
+     display: grid;
+      position: relative;
+     grid-template-columns: 20em 20em 20em 20em 20em;
+     grid-template-rows: 20em;
+     
+     
+  }
+  
+  .skills{
+      margin-bottom: 20rem;
+      margin-left: 10rem;
+  }
+  
+  
+  
+  
+  
+  /* animation for popup tooltip */
+  .tooltip {
+      position: relative;
+      padding: 5px 12px;
+      margin: 5px;
+      font-size: 15px;
+      border-radius: 100%;
+      color: #FFF;
+      font-family: 'Kanit', sans-serif;
+    }
+    
+    .tooltip:before,
+    .tooltip:after {
+      position: absolute;
+      content: '';
+      opacity: 0;
+      transition: all 0.4s ease;
+    }
+    
+    .tooltip:before {
+      border-width: 10px 8px 0 8px;
+      border-style: solid;
+      border-color: grey transparent transparent transparent;
+      top: -130px;
+      left: 75px;
+       transform: translateY(20px);
+    }
+    
+    .tooltip:after {
+      content: attr(data-tooltip);
+      background: grey;
+      width: 160px;
+      height: 40px;
+      font-size: 30px;
+      font-weight: 300;
+      top: -190px;
+      left: -10px;
+      padding: 10px;
+      border-radius: 5px;
+      letter-spacing: 1px;
+      text-align: center;
+      transform: translateY(20px);
+    }
+    
+    .tooltip:hover::before,
+    .tooltip:hover::after {
+      opacity: 1;
+      transform: translateY(-2px);
+    }
+    
+    @keyframes shake {
+      0% { 
+        transform: rotate(2deg);
+      }
+      50% {
+       transform: rotate(-3deg);
+      }
+      70% {
+        transform: rotate(3deg);
+      }
+    
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+    
+    .skillz:hover {
+      animation: shake 500ms ease-in-out forwards;
+    }
+  
+  .skills h1{
+      font-size: 6rem;
+      color: #DBEDF3;
+      font-family: 'Permanent Marker', cursive;
+      text-shadow: 3px 0 black;
+      margin-left: 30rem;
+  }
+  
+  .card  {
+      width: 40%;
+     margin-bottom: 10%;
+     margin-left: 30%;
+     border-radius: 8px;
+     backdrop-filter: blur(20px);
+     background-color: rgba(255, 255, 255, 0.5);
+     box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+     border: 1px solid rgba(255, 255, 255, 0.3);
+     
+  }
+  
+  .buttons{
+    margin-left: 40%
+  
+  }
+  
+  
+  
+  
+  .card h1 {
+      text-align: center;
+      font-size: 4rem;
+      color: #DBEDF3;
+      font-family: 'Permanent Marker', cursive;
+      text-shadow: 3px 0 black;
+  
+  }
+  .card p{
+      
+      text-align: center;
+      color: #DBEDF3;
+      font-family: 'Kanit', sans-serif;
+      font-size: 1.5rem;
+      
+  }
+  
+  .card img{
+      height: 80%;
+      width: 80%;
+      margin-left: 10%;
+  
+  }
+  
+  
+  
+  .projects{
+      font-size: 3rem;
+      color: #DBEDF3;
+      font-family: 'Permanent Marker', cursive;
+      text-shadow: 3px 0 black;
+      margin-left: 33%;
+      margin-bottom: 15%;
+  }
+  
+  
+  @media  screen and (max-width: 1280px) {
+      body{
+          padding: 0px;
+          margin: 0px;
+          background-color: white;
+         /* background-image: url("https://www.transparenttextures.com/patterns/crissxcross.png");*/
+          /* background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");*/
+            /*background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");*/
+            background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+      }
+      
+      
+  
+      
+    
+      .space {
+          margin: 16px;
+          padding: 0px;
+      }
+      
+      .letter{
+          display: inline-block;
+          font-size: 2.8rem;
+          color: #DBEDF3;
+          font-family: 'Permanent Marker', cursive;
+          text-shadow: 2px 0 black;
+         
+         
+          
+      }
+      
+      .letter:hover{
+          animation-name: rubberBand;
+          -webkit-animation: rubberBand;
+          animation-duration: 1s;
+          animation-fill-mode: both;
+          animation-iteration-count: 1;
+          color: #8c00cd;;
+      }
+      
+      /* animation for header rubber band effect */
+      @-webkit-keyframes rubberBand{
+          from {
+              transform: scale3d(1, 1, 1);
+            }
+          
+            30% {
+              transform: scale3d(1.25, 0.75, 1);
+            }
+          
+            40% {
+              transform: scale3d(0.75, 1.25, 1);
+            }
+          
+            50% {
+              transform: scale3d(1.15, 0.85, 1);
+            }
+          
+            65% {
+              transform: scale3d(.95, 1.05, 1);
+            }
+          
+            75% {
+              transform: scale3d(1.05, .95, 1);
+            }
+          
+            to {
+              transform: scale3d(1, 1, 1);
+            }
+      }
+      
+      @keyframes rubberBand {
+          from {
+            transform: scale3d(1, 1, 1);
+          }
+        
+          30% {
+            transform: scale3d(1.25, 0.75, 1);
+          }
+        
+          40% {
+            transform: scale3d(0.75, 1.25, 1);
+          }
+        
+          50% {
+            transform: scale3d(1.15, 0.85, 1);
+          }
+        
+          65% {
+            transform: scale3d(.95, 1.05, 1);
+          }
+        
+          75% {
+            transform: scale3d(1.05, .95, 1);
+          }
+        
+          to {
+            transform: scale3d(1, 1, 1);
+          }
+        }
+      
+      
+     
+        .header{
+            height: 10%;
+            
+        }
+      
+      
+      .header p{
+          margin-top: 5%;
+          width: 70%;
+         margin-left: 15%;
+         color: #DBEDF3;
+         font-family: 'Kanit', sans-serif;
+         font-size: 1.3rem;
+      }
+      
+      .container{
+         display: grid;
+          margin-left: 5%;
+         grid-template-columns: 60% 60%  ;
+         
+      }
+      
+      .skills{
+          margin-left: 0px;
+          margin-bottom: 40%;
+      }
+      
+      .skills h1{
+          font-size: 3rem;
+          color: #DBEDF3;
+          font-family: 'Permanent Marker', cursive;
+          text-shadow: 3px 0 black;
+          margin-left: 10%;
+      }
+      
+      .card  {
+          width: 80%;
+         margin-bottom: 30%;
+         margin-left: 10%;
+  
+         
+      }
+  
+     
+  
+      
+     
+      
+      .buttons{
+          margin-left: 30%;
+          
+      }
+      
+      .card h1 {
+          text-align: center;
+          font-size: 2.4rem;
+          color: #DBEDF3;
+          font-family: 'Permanent Marker', cursive;
+          text-shadow: 3px 0 black;
+      
+      }
+      .card p{
+          
+          text-align: center;
+          color: #DBEDF3;
+          font-family: 'Kanit', sans-serif;
+          font-size: 1.5rem;
+          
+      }
+      
+      .card img{
+          height: 80%;
+          width: 80%;
+          margin-left: 10%;
+      
+      }
+      
+      
+      .projects{
+          font-size: 1.3rem;
+          color: #DBEDF3;
+          font-family: 'Permanent Marker', cursive;
+          text-shadow: 5px 0 black;
+          margin-left: 15%;
+          margin-bottom: 20%;
+      }
+      
+  }
+   
   
   .tooltip:before,
   .tooltip:after {
@@ -223,6 +690,11 @@ body{
     width: 40%;
    margin-bottom: 10%;
    margin-left: 30%;
+   border-radius: 8px;
+   backdrop-filter: blur(20px);
+   background-color: rgba(255, 255, 255, 0.5);
+   box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+   border: 1px solid rgba(255, 255, 255, 0.3);
    
 }
 
@@ -274,9 +746,10 @@ body{
     body{
         padding: 0px;
         margin: 0px;
-        background-color: #444554;
+        background-color: darkblue;
        /* background-image: url("https://www.transparenttextures.com/patterns/crissxcross.png");*/
-        background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
+        /* background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png"); */
+
           /*background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png");*/
     }
     
